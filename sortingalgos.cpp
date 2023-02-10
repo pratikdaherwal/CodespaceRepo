@@ -28,13 +28,26 @@ void selectionSort(vector<int>&arr){
     }
 }
 
+void insertionSort(vector<int> &arr){
+    int n = arr.size();
+
+    for(int i=1; i<n; i++){
+        int j=i;
+
+        while (j>=0 && arr[j-1] > arr[j]){
+            swap(arr[j-1], arr[j]);
+            j--;
+        }
+    }
+}
+
 int main(){
     vector<int> arr {3,4,56,7,4,2,1,22,11,21};
     for(auto i=arr.begin(); i<arr.end(); i++){
         cout<<*i<<" ";
     }
 
-    selectionSort(arr);
+    insertionSort(arr);
     cout<<endl;
     for(auto i=arr.begin(); i<arr.end(); i++){
         cout<<*i<<" ";
