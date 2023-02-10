@@ -39,6 +39,6 @@ int main(){
     for(auto i=arr.begin(); i<arr.end(); i++){
         cout<<*i<<" ";
     }
-
+    cout<<"\n";
     return 0;
 }
