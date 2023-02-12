@@ -22,6 +22,7 @@ int binarySearch(vector<int> &arr, int ele){
             }
         }
     }
+    return -1;
 }
 
 int main(){
