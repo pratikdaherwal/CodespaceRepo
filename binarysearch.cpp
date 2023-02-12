@@ -10,14 +10,12 @@ int binarySearch(vector<int> &arr, int ele){
 
         while (low < high){
             if (arr[mid] == ele){
-                cout<<"found at index "<<mid;
-                cout<<endl<<endl;
                 return mid;
             }
             else if(arr[mid] < ele){
                 mid += 1;
             }
-            else if(arr[mid] > ele){
+            else{
                 mid -= 1;
             }
         }
@@ -32,7 +30,7 @@ int main(){
         cout<<*i<<" ";
     }
 
-    cout<<binarySearch(arr, 14);
+    cout<<"found at index "<<binarySearch(arr, 4)<<endl;
 
     return 0;
 }
